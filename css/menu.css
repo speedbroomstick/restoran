@@ -1,0 +1,86 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photo-menu{
+    display: flex;
+    width: 100%;
+    margin-bottom: 4vw;
+}
+.photo-menu>div{
+    width: 21vw;
+    height: 35vw;
+    margin: 4vw 2vw 0 0;
+    background-size: cover;
+    box-shadow: inset 0px 0px 2px 1px black;
+    color: #fff;
+    font-family: 'loto';
+    text-align: center;
+    font-size: 2vw;
+    position: relative;
+}
+.description-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    bottom: -3vw;
+}
+.photo-menu1{
+    background: url(../public/food2.jpg) no-repeat;
+}
+.photo-menu2{
+    background: url(../public/food3.jpg) no-repeat;
+}
+.photo-menu3{
+    background: url(../public/food1.jpg) no-repeat;
+}
+.photo-menu4{
+    background: url(../public/food4.jpg) no-repeat;
+}
+.photo-menu>div>div>p{
+    position: relative;
+}
+.photo-menu>div>div>p::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2vw;
+    width: 80%; 
+    height: 0.2px; 
+    background-color: rgba(255, 255, 255,0.3); 
+}
+.read-more>a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'loto';
+    font-size: 2vw;
+}
+.read-more{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+}
+.read-more>.line{
+    margin-left: 1vw;
+    width: 2.5%;
+}
+.read-more>.line::before{
+    width: 35%;
+    transform: translate(0.2vw,-0.2vw) rotate(30deg);
+}
+.read-more>.line::after{
+    width: 35%;
+    transform: translate(0.2vw,0.3vw) rotate(-30deg);
+}
+.read-more>.circle{
+        width: 3.4vw;
+        height: 3.7vw;
+        transform: rotate(90deg) translate(0vw,2vw);
+        border: 1px solid rgba(255, 255, 255,0.9);
+        clip-path: polygon(9% 0%, 100% 0%, 98% 50%, 0% 50%); /* Устанавливаем полукруглую форму нижней части */
+}
